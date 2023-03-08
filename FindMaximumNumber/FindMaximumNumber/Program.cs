@@ -21,6 +21,17 @@
             Console.WriteLine(number);
             Console.WriteLine(number1);
             Console.WriteLine(number2);
+            Console.WriteLine("--------------------------------");
+
+            //For Maximun String value
+            Console.WriteLine("Maximun string value");
+            string output = CheckMaxNumber.MaximunStringNumber("Apple", "Peach", "Banana");
+            string output1 = CheckMaxNumber.MaximunStringNumber("Banana", "Peach", "Apple");
+            string output2 = CheckMaxNumber.MaximunStringNumber("Apple", "Banana", "Peach");
+            Console.WriteLine(output);
+            Console.WriteLine(output1);
+            Console.WriteLine(output2);
         }
+
     }
 }
