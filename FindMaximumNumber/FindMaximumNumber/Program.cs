@@ -4,33 +4,15 @@
     {
         static void Main(string[] args)
         {
-           
-            int check = CheckMaxNumber.MaximumNumber(10, 20, 30);
-            int check1 = CheckMaxNumber.MaximumNumber(30, 20, 10);
-            int check2 = CheckMaxNumber.MaximumNumber(20,30, 10);
-            Console.WriteLine(check);
-            Console.WriteLine(check1);
-            Console.WriteLine(check2);
-            Console.WriteLine("------------------------------");
-
-            //for maximun float value
-            Console.WriteLine("Maximun float number");
-            double number = CheckMaxNumber.MaximunFloatNumber(11.1, 22.2, 33.3);
-            double number1 = CheckMaxNumber.MaximunFloatNumber(33.3, 22.2, 11.1);
-            double number2 = CheckMaxNumber.MaximunFloatNumber(11.1, 33.3, 22.2);
-            Console.WriteLine(number);
-            Console.WriteLine(number1);
-            Console.WriteLine(number2);
-            Console.WriteLine("--------------------------------");
-
-            //For Maximun String value
-            Console.WriteLine("Maximun string value");
-            string output = CheckMaxNumber.MaximunStringNumber("Apple", "Peach", "Banana");
-            string output1 = CheckMaxNumber.MaximunStringNumber("Banana", "Peach", "Apple");
-            string output2 = CheckMaxNumber.MaximunStringNumber("Apple", "Banana", "Peach");
-            Console.WriteLine(output);
-            Console.WriteLine(output1);
-            Console.WriteLine(output2);
+             int[] intArray = { 120, 111, 235, 142, 234, 112 };
+            GenericsMaximum<int> generic = new GenericsMaximum<int>(intArray);
+            generic.PrintValue();
+            double[] doubleArray = { 11.2, 11.3, 55.5, 22.2, 33.3 };
+            GenericsMaximum<double> genericsDouble = new GenericsMaximum<double>(doubleArray);
+            genericsDouble.PrintValue();
+            string[] stringArray = { "111", "222", "333", "444", "555" };
+            GenericsMaximum<string> genericString = new GenericsMaximum<string>(stringArray);
+            genericString.PrintValue();
         }
 
     }
